@@ -46,8 +46,11 @@ import {
   MaterialStockDetail,
   GroupedInventory,
   LogEntry,
-} from "./types";
-import { fetchSheetData, sendDataToSheet } from "./GoogleSheetsService";
+} from "./types/inventoryTypes";
+import {
+  fetchSheetData,
+  sendDataToSheet,
+} from "./services/GoogleSheetsService";
 
 interface BOMRow {
   finished_material_id: string;
